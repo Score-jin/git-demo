@@ -11,10 +11,17 @@
 <script>
     const p = document.querySelector('p');
     const btn = document.querySelector('button');
+    const body = document.querySelector('body')
     btn.addEventListener('click',()=>{
         alert('我要修改小雨颜色了');
         p.style.backgroundColor='yellow';
+        p.innerText='史谨爱小雨呀'
         btn.disabled=true
+        let baidu = document.createElement('a');
+        var t=document.createTextNode("百度一下小雨就知道");
+        baidu.href='http://www.baidu.com'
+        baidu.appendChild(t)
+        body.appendChild(baidu)
     })
 </script>
 </body>
