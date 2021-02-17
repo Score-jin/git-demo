@@ -6,5 +6,16 @@
 </head>
 <body>
 我是index.html文件
+<p style="background-color: red">我是小雨，我很红啊</p>
+<button>修改小雨颜色</button>
+<script>
+    const p = document.querySelector('p');
+    const btn = document.querySelector('button');
+    btn.addEventListener('click',()=>{
+        alert('我要修改小雨颜色了');
+        p.style.backgroundColor='yellow';
+        btn.disabled=true
+    })
+</script>
 </body>
 </html>
